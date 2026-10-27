@@ -18,7 +18,7 @@ public class task2 {
             return;
         }
             System.out.print(" ");
-        if (first<second){
+        if (first < second){
             printNumbers(first + 1, second);
         } else {
             printNumbers(first - 1, second);
