@@ -14,12 +14,12 @@ public class practical_5 {
             long endTime = System.nanoTime();
             double durationInMilliseconds = (endTime - startTime) / 1_000_000.0;
 
-            System.out.println("Розмір масиву: " + size);
-            System.out.println("Масив відсортовано правильно: " + isSorted(arr, isAscending));
-            System.out.printf("Час виконання: %.3f мс\n\n", durationInMilliseconds);
+            System.out.println("Array size: " + size);
+            System.out.println("Array is truly sorted: " + isSorted(arr, isAscending));
+            System.out.printf("Time: %.3f ms\n\n", durationInMilliseconds);
         }
     }
-    
+
     private static void swap(double[] arr, int i, int j) {
         double temp = arr[i];
         arr[i] = arr[j];
@@ -68,7 +68,7 @@ public class practical_5 {
     }
 
     public static void main(String[] args) {
-        int[] sizes = {1_000, 10_000, 100_000};
+        int[] sizes = {1000, 10000, 100000};
 
         System.out.println("ascending");
         runTests(sizes, true);
