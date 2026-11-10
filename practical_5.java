@@ -58,12 +58,9 @@ public class practical_5 {
 
     public static boolean isSorted(double[] arr, boolean isAscending) {
         for (int i = 0; i < arr.length - 1; i++) {
-            if (isAscending) {
-                if (arr[i] > arr[i + 1]) return false;
-            } else {
-                if (arr[i] < arr[i + 1]) return false;
+            if (isAscending && arr[i] > arr[i + 1] ||
+                !isAscending && arr[i] < arr[i + 1]) return false;
             }
-        }
         return true;
     }
 
